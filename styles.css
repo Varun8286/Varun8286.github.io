@@ -1,0 +1,462 @@
+/*Universal Styles*/
+body {
+  background-color: #A5DCE4;
+  font-family: 'Alegreya', serif;
+  font-size: 17px;
+  scroll-behavior: smooth;
+  color: #FBDBC1;
+  margin: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Navigation Bar Styles */
+
+header {
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  background: #A01C32;
+  top: 0;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+}
+
+nav img {
+  height: 36px;
+}
+
+nav h1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 47px;
+}
+
+nav span {
+  margin-left: auto;
+  padding: 5px;
+  border: 2px solid #FBDBC1;
+  border-radius: 13px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+@media (max-width: 560px) {
+  header {
+    height: 50px;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav h1 {
+    font-size: 1.75em;
+    margin-top: 1.27em;
+  }
+
+  nav span {
+    height: 20px;
+    margin-right: 0;
+    padding: 3.5px;
+  }
+}
+
+@media (max-width: 330px) {
+  nav span {
+    display: none;
+  }
+
+  nav h1 {
+    left: 59px;
+  }
+}
+
+@media (max-width: 280px) {
+  nav h1 {
+    left: 39px;
+  }
+}
+
+/* Main Section */
+
+main {
+  padding-top: 62px;
+  margin: auto;
+}
+
+/* Banner Section Styles */
+
+.banner {
+  width: 95%;
+  height: 400px;
+  margin: auto;
+  background-image: url('/anastase-maragos-9dzWZQWZMdE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.content {
+  padding-top: 150px;
+}
+
+.content-header {
+  margin: auto;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+button {
+  margin: auto;
+  background: #FBDBC1;
+  border: none;
+  border-radius: 13px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 7px #FBDBC1;
+  color: #A01C32;
+  padding: 4px;
+}
+
+@media (max-width: 560px) {
+  .banner {
+    height: 350px;
+  }
+
+  .content {
+    padding-top: 100px;
+  }
+}
+
+/* Activities Section Styles */
+
+.activities {
+  width: 95%;
+  margin: auto;
+}
+
+.activities h2 {
+  font-size: 1.6em;
+  font-family: 'Bree Serif', serif;
+  text-decoration: underline;
+  color: #163D57;
+  margin: 45px;
+}
+
+.activity {
+  padding: 10px;
+}
+
+.activity img {
+  height: 130px;
+  padding: 0;
+  margin: 60px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.activity span {
+  display: flex;
+  justify-content: center;
+  color: #163D57;
+  font-size: 1.2em;
+}
+
+/* Qualities Section Styles */
+
+.qualities {
+  margin: auto;
+  width: 95%;
+}
+
+.qualities h2 {
+  font-size: 1.6em;
+  font-family: 'Bree Serif', serif;
+  text-decoration: underline;
+  color: #A01C32;
+  margin: 45px;
+}
+
+.quality {
+  padding: 10px;
+  width: 25%;
+}
+
+.quality img {
+  height: 170px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.quality h3 {
+  font-family: 'Bree Serif', serif;
+  color: #A01C32;
+  font-size: 1.3em;
+}
+
+.quality span {
+  color: #A01C32;
+}
+
+/* Qualities Section Media Queries */
+
+@media (max-width: 560px) {
+
+  .qualities-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quality {
+    width: 75%;
+  }
+
+  .quality img {
+    height: 120px;
+    margin-top: 20px;
+  }
+}
+
+/* Location and Timings Section Styles */
+
+.location-and-timings {
+  background-color: #163D57;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.location-and-timing-detail {
+  display: inline-flex;
+}
+
+.location-and-timing-detail h3 {
+  font-family: 'Bree Serif', serif;
+  padding-right: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.location-and-timing-detail img {
+  height: 25px;
+  position: relative;
+  top: 26px;
+  padding-right: 3px;
+}
+
+.location-and-timing-detail p {
+  font-size: 1.55rem;
+}
+
+/* Location and Timings Section Media Queries */
+
+@media (max-width: 560px) {
+
+  .location-and-timing-detail {
+    display: block;
+  }
+
+  .location-and-timing-detail img {
+    display: none;
+  }
+}
+
+/* Contact Us Section Styles */
+
+.contact-us {
+  width: 95%;
+}
+
+.contact-us h2 {
+  font-size: 1.6em;
+  font-family: 'Bree Serif', serif;
+  text-decoration: underline;
+  color: #163D57;
+}
+
+.contact-us h4 {
+  font-size: 1.1em;
+  color: #163D57;
+  margin-top: 0;
+}
+
+.contact-us-flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-detail {
+  margin: 10px;
+}
+
+.contact-detail img {
+  height: 50px;
+  padding: 5px;
+}
+
+.contact-detail span,
+.contact-detail span a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #163D57;
+  position: relative;
+  bottom: 12px;
+}
+
+.or {
+  font-size: 1.8em;
+  margin: 10px;
+  margin-left: 0;
+  width: 50%;
+  color: #163D57;
+}
+
+.contact-form {
+  width: 90%;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  padding: 6px 0;
+  margin: 4px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+
+}
+
+input[type=text]:focus {
+  border: 1px solid #163D57;
+}
+
+textarea {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+input[type=text],
+select,
+textarea {
+  resize: both;
+}
+
+input[type=submit] {
+  background: #FBDBC1;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 12px;
+  font-size: 0.8em;
+  color: #163D57;
+}
+
+input[type=submit]:active {
+  padding: 10px;
+}
+
+/* Contact Us Media Queries */
+
+@media only screen and (max-width: 840px) {
+  .contact-detail span,
+  .contact-detail span a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .contact-us-flex-container {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 280px) {
+  .contact-detail img {
+    height: 40px;
+  }
+  .contact-detail span,
+  .contact-detail span a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Footer Section Styles */
+
+footer {
+  background-color: #A01C32;
+  text-align: center;
+  color: #FBDBC1;
+  font-family: 'Alegreya', serif;
+  font-size: 17px;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.social-media-icons-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-media-icons-container img {
+  height: 50px;
+  margin: 0 30px;
+}
+
+footer h3 {
+  font-size: 2em;
+}
+
+footer h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+  opacity: 0.6;
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .social-media-icons-container img {
+    margin: 0 22px;
+  }
+}
+
+@media (max-width: 280px) {
+  .social-media-icons-container img {
+    margin: 0 10px;
+  }
+}
